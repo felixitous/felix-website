@@ -1,143 +1,92 @@
-/* Animation for Title text */
-
-.title-animation{
-
-}
-
-.title-animation:hover{
-  animation: slight-bounce ease-out 2s;
+.title-animation:hover {
+  animation: slightpulse linear 0.8s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
-  -webkit-animation: slight-bounce ease-out 2s;
+  -webkit-animation: slightpulse linear 0.8s;
   -webkit-animation-iteration-count: infinite;
   -webkit-transform-origin: 50% 50%;
-  -moz-animation: slight-bounce ease-out 2s;
+  -moz-animation: slightpulse linear 0.8s;
   -moz-animation-iteration-count: infinite;
   -moz-transform-origin: 50% 50%;
-  -o-animation: slight-bounce ease-out 2s;
+  -o-animation: slightpulse linear 0.8s;
   -o-animation-iteration-count: infinite;
   -o-transform-origin: 50% 50%;
-  -ms-animation: slight-bounce ease-out 2s;
+  -ms-animation: slightpulse linear 0.8s;
   -ms-animation-iteration-count: infinite;
   -ms-transform-origin: 50% 50%;
 }
 
-@keyframes slight-bounce{
+@keyframes slightpulse{
   0% {
-    transform:  translate(0px,0px)  ;
+    transform:  scaleX(1.00) scaleY(1.00) ;
   }
-  15% {
-    transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    transform:  translate(0px,0px)  ;
-  }
-  45% {
-    transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    transform:  translate(0px,0px)  ;
-  }
-  75% {
-    transform:  translate(0px,-5px)  ;
+  50% {
+    transform:  scaleX(1.10) scaleY(1.10) ;
   }
   100% {
-    transform:  translate(0px,0px)  ;
+    transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  101% {
+    transform:  scaleX(1.00) scaleY(1.00) ;
   }
 }
 
-@-moz-keyframes slight-bounce{
+@-moz-keyframes slightpulse{
   0% {
-    -moz-transform:  translate(0px,0px)  ;
+    -moz-transform:  scaleX(1.00) scaleY(1.00) ;
   }
-  15% {
-    -moz-transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    -moz-transform:  translate(0px,0px)  ;
-  }
-  45% {
-    -moz-transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    -moz-transform:  translate(0px,0px)  ;
-  }
-  75% {
-    -moz-transform:  translate(0px,-5px)  ;
+  50% {
+    -moz-transform:  scaleX(1.10) scaleY(1.10) ;
   }
   100% {
-    -moz-transform:  translate(0px,0px)  ;
+    -moz-transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  101% {
+    -moz-transform:  scaleX(1.00) scaleY(1.00) ;
   }
 }
 
-@-webkit-keyframes slight-bounce {
+@-webkit-keyframes slightpulse {
   0% {
-    -webkit-transform:  translate(0px,0px)  ;
+    -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
   }
-  15% {
-    -webkit-transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    -webkit-transform:  translate(0px,0px)  ;
-  }
-  45% {
-    -webkit-transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    -webkit-transform:  translate(0px,0px)  ;
-  }
-  75% {
-    -webkit-transform:  translate(0px,-5px)  ;
+  50% {
+    -webkit-transform:  scaleX(1.10) scaleY(1.10) ;
   }
   100% {
-    -webkit-transform:  translate(0px,0px)  ;
+    -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  101% {
+    -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
   }
 }
 
-@-o-keyframes slight-bounce {
+@-o-keyframes slightpulse {
   0% {
-    -o-transform:  translate(0px,0px)  ;
+    -o-transform:  scaleX(1.00) scaleY(1.00) ;
   }
-  15% {
-    -o-transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    -o-transform:  translate(0px,0px)  ;
-  }
-  45% {
-    -o-transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    -o-transform:  translate(0px,0px)  ;
-  }
-  75% {
-    -o-transform:  translate(0px,-5px)  ;
+  50% {
+    -o-transform:  scaleX(1.10) scaleY(1.10) ;
   }
   100% {
-    -o-transform:  translate(0px,0px)  ;
+    -o-transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  101% {
+    -o-transform:  scaleX(1.00) scaleY(1.00) ;
   }
 }
 
-@-ms-keyframes slight-bounce {
+@-ms-keyframes slightpulse {
   0% {
-    -ms-transform:  translate(0px,0px)  ;
+    -ms-transform:  scaleX(1.00) scaleY(1.00) ;
   }
-  15% {
-    -ms-transform:  translate(0px,-25px)  ;
-  }
-  30% {
-    -ms-transform:  translate(0px,0px)  ;
-  }
-  45% {
-    -ms-transform:  translate(0px,-15px)  ;
-  }
-  60% {
-    -ms-transform:  translate(0px,0px)  ;
-  }
-  75% {
-    -ms-transform:  translate(0px,-5px)  ;
+  50% {
+    -ms-transform:  scaleX(1.10) scaleY(1.10) ;
   }
   100% {
-    -ms-transform:  translate(0px,0px)  ;
+    -ms-transform:  scaleX(1.00) scaleY(1.00) ;
+  }
+  101% {
+    -ms-transform:  scaleX(1.00) scaleY(1.00) ;
   }
 }

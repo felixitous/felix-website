@@ -36,7 +36,7 @@
 		-o-transition: border-color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: inherit;
 		outline: 0;
 		text-decoration: none;
@@ -196,12 +196,22 @@
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
+			text-decoration: none;
 		}
+
+		#header a {
+			text-decoration: none;
+		}
+
 
 		#header h1:hover {
 			cursor: pointer;
 			cursor: hand;
 
+		}
+
+		#header a {
+			text-decoration: none;
 		}
 
 		#header p {
