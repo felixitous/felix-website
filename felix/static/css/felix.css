@@ -26,6 +26,8 @@
 }
 
 .title-animation:hover {
+  -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+  animation-play-state: paused;
   color:#01A9DB;
 }
 
