@@ -1,19 +1,32 @@
-.title-animation:hover {
-  animation: slightpulse linear 0.8s;
+.title-animation {
+  animation: slightpulse linear 1.9s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
-  -webkit-animation: slightpulse linear 0.8s;
+  -webkit-animation: slightpulse linear 1.9s;
   -webkit-animation-iteration-count: infinite;
   -webkit-transform-origin: 50% 50%;
-  -moz-animation: slightpulse linear 0.8s;
+  -moz-animation: slightpulse linear 1.9s;
   -moz-animation-iteration-count: infinite;
   -moz-transform-origin: 50% 50%;
-  -o-animation: slightpulse linear 0.8s;
+  -o-animation: slightpulse linear 1.9s;
   -o-animation-iteration-count: infinite;
   -o-transform-origin: 50% 50%;
-  -ms-animation: slightpulse linear 0.8s;
+  -ms-animation: slightpulse linear 1.9s;
   -ms-animation-iteration-count: infinite;
   -ms-transform-origin: 50% 50%;
+  -moz-animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+  -o-animation-delay: 3.5s;
+  -ms-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.title-animation:hover {
+  color:#01A9DB;
 }
 
 @keyframes slightpulse{
@@ -21,7 +34,7 @@
     transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    transform:  scaleX(1.10) scaleY(1.10) ;
+    transform:  scaleX(1.03) scaleY(1.03) ;
   }
   100% {
     transform:  scaleX(1.00) scaleY(1.00) ;
@@ -36,7 +49,7 @@
     -moz-transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    -moz-transform:  scaleX(1.10) scaleY(1.10) ;
+    -moz-transform:  scaleX(1.03) scaleY(1.03) ;
   }
   100% {
     -moz-transform:  scaleX(1.00) scaleY(1.00) ;
@@ -51,7 +64,7 @@
     -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    -webkit-transform:  scaleX(1.10) scaleY(1.10) ;
+    -webkit-transform:  scaleX(1.03) scaleY(1.03) ;
   }
   100% {
     -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
@@ -66,7 +79,7 @@
     -o-transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    -o-transform:  scaleX(1.10) scaleY(1.10) ;
+    -o-transform:  scaleX(1.03) scaleY(1.03) ;
   }
   100% {
     -o-transform:  scaleX(1.00) scaleY(1.00) ;
@@ -81,7 +94,7 @@
     -ms-transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    -ms-transform:  scaleX(1.10) scaleY(1.10) ;
+    -ms-transform:  scaleX(1.03) scaleY(1.03) ;
   }
   100% {
     -ms-transform:  scaleX(1.00) scaleY(1.00) ;
