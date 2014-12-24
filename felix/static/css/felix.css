@@ -90,3 +90,8 @@
     -ms-transform:  scaleX(1.00) scaleY(1.00) ;
   }
 }
+
+.button {
+  border: 1px solid white;
+  padding: 10px;
+}
