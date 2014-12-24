@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Directive by HTML5 UP</title>
+		<title>Felix The Cat</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -15,6 +15,7 @@
 	    <script src="{% static 'js-direct/jquery.min.js' %}"></script>
 	    <script src="{% static 'js-direct/skel.min.js' %}"></script>
 	    <script src="{% static 'js-direct/init.js' %}"></script>
+	    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 	    <link rel="stylesheet" href="{% static 'css-direct/skel.css' %}"/>
 	    <link rel="stylesheet" href="{% static 'css-direct/style.css' %}" />
 	    <link rel="stylesheet" href="{% static 'css-direct/style-wide.css' %}"/>
@@ -37,40 +38,43 @@
 			<div id="main">
 			
 				<header class="major container 75%">
-					<h2>Cool Projects From The Past</h2>
+					<h2>Ideas and Experiments</h2>
 					<!--
 					<p>Tellus erat mauris ipsum fermentum<br />
 					etiam vivamus nunc nibh morbi.</p>
 					-->
 				</header>
 				
-				<div class="box alt container">
-					<section class="feature left">
-						<a href="https://github.com/felixitous/automation/blob/master/browser.py" class="image icon fa-signal"><img src="{% static 'images/pic01.jpg' %}" alt="" /></a>
-						<div class="content">
-							<h3>PintOS Operating System</h3>
-							<p>Designed a fully functional operating system in C which handles multithreading, system calls, and parent/child processes.</p>
-						</div>
-					</section>
-					<section class="feature right">
-						<a href="#" class="image icon fa fa-code"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
+				<div class="box container">
+					<section>
+						<header>
+							<h3><a href="https://github.com/felixitous/automation">Game Automation</a></h3>
+							<p>12 - 23 - 2014</p>
+						</header>
+						<blockquote>Python Application which plays a Facebook game automatically and alerts the user when a captcha appears by automatically sending an email. This way, the user can solve the captcha and keep running the script. Built using Selenium.
+							<div>
+							<code class="prettyprint">
+ 
+								<div class="code">
+								def switch_cheese(driver): <br>
+									try: <br>
+									bait_quantity = driver.find_element_by_xpath("//*[@id=\"hud_baitQuantity\"]") <br>
+									except NoSuchElementException: <br>
+									bait = driver.find_element_by_xpath("/html/body/div/...") <br>
+									bait.click() <br>
+									#slight delay for the page to refresh <br>
+									time.sleep(2) <br>
+									target_bait = driver.find_element_by_xpath("/html/body/div/div[1]/div[3]/div[2]/div[2]...") <br>
+									target_bait.click()
+								</div>
+							</code>
+						</blockquote>
 
-						<div class="content">
-							<h3>KVStore</h3>
-							<p>Designed a multi-level server in Java which has Master/Slave Servers which can handle requests from multiple Clients</p>
-						</div>
-					</section>
-					<section class="feature left">
-						<a href="#" class="image icon fa fa-code"><img src="{% static 'images/pic03.jpg' %}" alt="" /></a>
-						<div class="content">
-							<h3>DNA Sequencer</h3>
-							<p>Small Python script utilizes dynamic programming to generate complete DNA sequences out of multiple small DNA subsequences</p>
-						</div>
 					</section>
 				</div>
 				
-				<!--
-				<div class="box container">
+				
+<!-- 				<div class="box container">
 					<header>
 						<h2>A lot of generic stuff</h2>
 					</header>
@@ -215,11 +219,11 @@
 							</div>
 						</form>
 					</section>
-				</div>
-				-->
+				</div> -->
+				
 				
 				<footer class="major container 75%">
-					<h3>More Projects to come!</h3>
+					<h3>More Ideas to come!</h3>
 <!-- 					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p> -->
 					<ul class="actions">
 						<!-- <li><a href="#" class="button">Join our crew</a></li> -->
