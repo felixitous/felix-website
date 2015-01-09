@@ -14,7 +14,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href='{% static 'favicon.ico' %}'>
-    
+
     <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <script src="{% static 'js/skel.min.js' %}"></script>
     <script src="{% static 'js/init.js' %}"></script>
@@ -25,6 +25,19 @@
     <link rel="stylesheet" href="{% static 'css/felix.css' %}" />
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
+    <!-- Pingdom Analytics -->
+    <script>
+      var _prum = [['id', '54af7c22abe53d0b78b63a45'],
+                   ['mark', 'firstbyte', (new Date()).getTime()]];
+      (function() {
+          var s = document.getElementsByTagName('script')[0]
+            , p = document.createElement('script');
+          p.async = 'async';
+          p.src = '//rum-static.pingdom.net/prum.min.js';
+          s.parentNode.insertBefore(p, s);
+      })();
+    </script>
   </head>
   <body class="loading">
     <div id="wrapper">
