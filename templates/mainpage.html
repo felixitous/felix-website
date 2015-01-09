@@ -11,6 +11,13 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href='{% static 'favicon.ico' %}'>
+		
+		<!-- Highlight.js Script for Colorful Code -->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 	    <script src="{% static 'js-direct/jquery.min.js' %}"></script>
 	    <script src="{% static 'js-direct/skel.min.js' %}"></script>
@@ -22,16 +29,19 @@
 	    <link rel="stylesheet" href="{% static 'css-direct/style-noscript.css' %}"/>
 	    <link rel="stylesheet" href="{% static 'css-direct/font-awesome.min.css' %}"/>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
+		<!-- Activate JavaScript Highlighting for Code -->
+		<script>hljs.initHighlightingOnLoad();</script>
 	</head>
 	<body>
 
 		<!-- Header -->
 			<div id="header">
 				<span class="logo icon fa-cloud"></span>
-				<h1>Hi. My Name is Felix Liu</h1>
+				<h1>Hi. My Name is Felix Liu.</h1>
 				<p> Welcome to my site!
 				<br />
-				Feel free to scroll down to learn more about me</p>
+				Feel free to scroll down to learn more about me.</p>
 			</div>
 
 		<!-- Main -->
@@ -52,25 +62,78 @@
 							<p>12 - 23 - 2014</p>
 						</header>
 						<blockquote>Python Application which plays a Facebook game automatically and alerts the user when a captcha appears by automatically sending an email. This way, the user can solve the captcha and keep running the script. Built using Selenium.
-							<div>
-							<code class="prettyprint">
- 
-								<div class="code">
-								def switch_cheese(driver): <br>
-									try: <br>
-									bait_quantity = driver.find_element_by_xpath("//*[@id=\"hud_baitQuantity\"]") <br>
-									except NoSuchElementException: <br>
-									bait = driver.find_element_by_xpath("/html/body/div/...") <br>
-									bait.click() <br>
-									#slight delay for the page to refresh <br>
-									time.sleep(2) <br>
-									target_bait = driver.find_element_by_xpath("/html/body/div/div[1]/div[3]/div[2]/div[2]...") <br>
-									target_bait.click()
-								</div>
-							</code>
+							<div class="codecontainer">
+							<pre>
+ 								<code class="code">
+def switch_cheese(driver):
+	try: 
+		bait_quantity = driver.find_element_by_xpath("//*[@id=\"hud_baitQuantity\"]") 
+	except NoSuchElementException: 
+		bait = driver.find_element_by_xpath("/html/body/div/...")
+		bait.click() 
+	#slight delay for the page to refresh 
+	time.sleep(2) 
+	target_bait = driver.find_element_by_xpath("/html/body/div/div[1]/div[3]/div[2]/div[2]...")
+	target_bait.click()
+								</code>
+							</pre>
+							</div>
 						</blockquote>
 
 					</section>
+
+				</div>
+
+				<div class="box container">
+					<section>
+						<header>
+							<h3><a href="https://github.com/felixitous/sequencing">Shortest SuperString</a></h3>
+							<p>11 - 19 - 2014</p>
+						</header>
+						<blockquote> A small script in built in Python which takes many subsequences of DNA and reconstructs the initial DNA sequence. This is done with a greedy algorithm which finds the biggest overlap, combines the two strings, and removes the initial two strings from the list. The script repeatedly does this until only one string is left which represents the initial DNA sequence. 
+							<div class="codecontainer">
+							<pre>
+ 								<code class="code">
+# Calculates all the overlaps for all the strings
+overlap_values = {}
+def mostoverlaps(content):
+	global overlap_values
+	max_result = 0
+	winner1 = None
+	winner2 = None
+	i = 0
+	j = 0
+	while (i < len(content)):
+		while (j < len(content)):
+			if (i < j):
+				first = content[i]
+				second = content[j]
+				key = first + "|" + second
+				tmp_result = overlap_values.get(key)
+				if tmp_result is None:
+					tmp_result = substringfinder2(first, second)
+				overlap_values.update({key : tmp_result})
+				if tmp_result > max_result:
+					max_result = tmp_result
+					winner1 = first
+					winner2 = second
+			j += 1
+		i += 1
+		j = 0
+	combined = substring_edge(winner1, winner2, max_result)
+	if combined is None:
+		combined = substring_edge(winner2, winner1, max_result)
+	content.remove(winner1)
+	content.remove(winner2)
+	content.append(combined)
+	return content
+								</code>
+							</pre>
+							</div>
+						</blockquote>
+
+					</section>
+					
 				</div>
 				
 				
@@ -243,18 +306,25 @@
 
 					<p>Feel free to send me a message if you wish to know more about me!</p>
 
-					<form method="post" action="#">
+					<form method="post">
+						{% csrf_token %}
 						<div class="row">
 							<div class="6u 12u(3)">
-								<input type="text" name="name" placeholder="Name" />
+								<!-- <label for="{{ form.sender_name.name }}"></label> -->
+								{{ form.sender_name }}
+								<!-- <input type="text" name="name" placeholder="Name" /> -->
 							</div>
 							<div class="6u 12u(3)">
-								<input type="email" name="email" placeholder="Email" />
+								{{ form.email }}
+								<!-- <label for="{{ form.email.email }}">Email</label> -->
+								<!-- <input type="email" name="email" placeholder="Email" /> -->
 							</div>
 						</div>
 						<div class="row">
 							<div class="12u">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
+								{{ form.message }}
+								<!-- <label for="{{ form.message.message }}">Message</label> -->
+								<!-- <textarea name="message" placeholder="Message" rows="6"></textarea> -->
 							</div>
 						</div>
 						<div class="row">
@@ -267,11 +337,10 @@
 					</form>
 				
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+		                <li><a href="{% static 'felixliu.pdf' %}" class="icon fa-pencil-square-o"><span class='label'>Resume</span></a></li>
+		                <li><a href="https://www.facebook.com/DenimJacketsAreDeceiving" class="icon fa-facebook"><span class='label'>Facebook</span></a></li>
+		                <li><a href="https://github.com/felixitous" class="icon fa-github"><span class='label'>Github</span></a></li>
+		                <li><a href="https://www.linkedin.com/pub/felix-liu/57/716/a75" class="icon fa-linkedin"><span class='label'>Linkedin</span></a></li>
 					</ul>
 					
 					<ul class="copyright">
