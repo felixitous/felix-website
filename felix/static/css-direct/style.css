@@ -970,8 +970,12 @@
 .code {
 	padding: 10px;
 	border: 3px solid black;
-	height: 350px;
+	/*height: 350px;*/
 	/*background: #D8D8D8;*/
+}
+
+pre {
+	background-color: #fff;
 }
 
 .navbar-nav > li > a {
@@ -1012,8 +1016,8 @@
 	border-color: #01A9DB;
 	color: #fff;
 	background-image: none;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
 
 }
 
