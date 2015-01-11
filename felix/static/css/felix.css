@@ -36,7 +36,7 @@
     transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    transform:  scaleX(1.03) scaleY(1.03) ;
+    transform:  scaleX(1.15) scaleY(1.15) ;
   }
   100% {
     transform:  scaleX(1.00) scaleY(1.00) ;
@@ -51,7 +51,7 @@
     -moz-transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    -moz-transform:  scaleX(1.03) scaleY(1.03) ;
+    -moz-transform:  scaleX(1.15) scaleY(1.15) ;
   }
   100% {
     -moz-transform:  scaleX(1.00) scaleY(1.00) ;
@@ -66,7 +66,7 @@
     -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    -webkit-transform:  scaleX(1.03) scaleY(1.03) ;
+    -webkit-transform:  scaleX(1.15) scaleY(1.15) ;
   }
   100% {
     -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
@@ -81,7 +81,7 @@
     -o-transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    -o-transform:  scaleX(1.03) scaleY(1.03) ;
+    -o-transform:  scaleX(1.15) scaleY(1.15) ;
   }
   100% {
     -o-transform:  scaleX(1.00) scaleY(1.00) ;
@@ -96,7 +96,7 @@
     -ms-transform:  scaleX(1.00) scaleY(1.00) ;
   }
   50% {
-    -ms-transform:  scaleX(1.03) scaleY(1.03) ;
+    -ms-transform:  scaleX(1.15) scaleY(1.15) ;
   }
   100% {
     -ms-transform:  scaleX(1.00) scaleY(1.00) ;

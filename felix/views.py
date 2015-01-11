@@ -22,6 +22,9 @@ def homepage(request):
 def thanks_page(request):
 	return render(request, 'thanks.html')
 
+def home1page(request):
+	return render(request, 'mpage.html')
+	
 def receive_message(request):
 	if request.method == 'POST':
 		form = ContactForm(request.POST)

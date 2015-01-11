@@ -996,8 +996,13 @@ pre {
 	border-bottom: none;
 }
 
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover:focus {
 	color: #01A9DB;
+	border-bottom: none;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+	color: #fff;
 	border-bottom: none;
 }
 

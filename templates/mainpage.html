@@ -44,6 +44,26 @@
 	    <link rel="stylesheet" href="{% static 'css-direct/font-awesome.min.css' %}"/>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
+
+		<!-- Script for Scrolling for Navbar  -->
+		<!-- Retrieved From http://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
+		<script>
+			$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
+
 		<!-- Activate JavaScript Highlighting for Code -->
 		<script>hljs.initHighlightingOnLoad();</script>
 	</head>
