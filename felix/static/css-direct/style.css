@@ -45,7 +45,7 @@
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #01A9DB;
+		color: #3E9FD0;
 		/*color: #4eb980;*/
 		text-decoration: none;
 	}
@@ -109,7 +109,7 @@
 	}
 
 	blockquote {
-		border-left: solid 0.5em #01A9DB;
+		border-left: solid 0.5em #3E9FD0;
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
@@ -267,7 +267,7 @@
 		select:focus,
 		textarea:focus {
 			background: rgba(224, 224, 224, 0.15);
-			border-color: #01A9DB;
+			border-color: #3E9FD0;
 			/*border-color: #4eb980;*/
 		}
 
@@ -779,7 +779,7 @@
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #01A9DB;
+				color: #3E9FD0;
 				/*color: #4eb980;*/
 			}
 
@@ -800,7 +800,7 @@
 		}
 
 		#header .logo {
-			background: #01A9DB;
+			background: #3E9FD0;
 			/*background: #4eb980;*/
 			border-radius: 100%;
 			color: white;
@@ -834,7 +834,7 @@
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #01A9DB;
+		background-color: #3E9FD0;
 		/*background-color: #4eb980;*/
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
@@ -885,7 +885,7 @@
 		#footer .button {
 			background: white;
 			box-shadow: inset 0 0 0 1px white;
-			color: #01A9DB;
+			color: #3E9FD0;
 			/*color: #4eb980;*/
 		}
 
@@ -988,16 +988,16 @@ pre {
 
 .navbar {
 	min-height: 32px !important;
-	background-color: #01A9DB !important;
+	background-color: #3E9FD0 !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: #01A9DB;
+	color: #3E9FD0;
 	border-bottom: none;
 }
 
 .navbar-default .navbar-nav > li > a:hover:focus {
-	color: #01A9DB;
+	color: #3E9FD0;
 	border-bottom: none;
 }
 
@@ -1017,8 +1017,8 @@ pre {
 }
 
 .navbar-default {
-	background-color: #01A9DB !important;
-	border-color: #01A9DB;
+	background-color: #3E9FD0 !important;
+	border-color: #3E9FD0;
 	color: #fff;
 	background-image: none;
 	padding-left: 30px;
@@ -1027,6 +1027,21 @@ pre {
 }
 
 .navbar-inner {
-	background-color: #01A9DB !important;
+	background-color: #3E9FD0 !important;
+}
+
+/* Drop Menu Style */
+.drop-settings {
+	background-color: #3E9FD0;
+}
+
+.drop-settings > li > a {
+	border-bottom: none;
+	color: white;
+}
+
+.drop-settings > li > a:hover, .drop-settings > li > a:focus {
+	color: #3E9FD0;
+	background-color: #fff;
 }
 

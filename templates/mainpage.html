@@ -13,7 +13,7 @@
 		<meta name="keywords" content="" />
 
 		<!-- Favicon -->
-		<link rel="icon" type="image/png" href='{% static 'favicon.ico' %}'>
+		<link rel="icon" type="image/png" href='{% static 'felix.ico' %}'>
 
 		<!-- Bootstrap for NavBar -->
 		<!-- Latest compiled and minified CSS -->
@@ -82,7 +82,14 @@
 				<nav class="collapse navbar-collapse" role="navigation">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#header">Home</a></li>
-						<li><a href="#ideas">Ideas and Experiments</a></li>
+						<!-- <li><a href="#ideas">Ideas and Experiments</a></li> -->
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ideas <span class="caret"></span></a>
+						  <ul class="dropdown-menu drop-settings" role="menu">
+						    <li><a href="#gameautomation">Game Automation</a></li>
+						    <li><a href="#shortestsuperstring">Shortest Superstring</a></li>
+						  </ul>
+						</li>
 						<li><a href="#questions">Message</a></li>
 						<!-- <li><a href="#">Action</a></li> -->
 					</ul>
@@ -109,8 +116,10 @@
 					etiam vivamus nunc nibh morbi.</p>
 					-->
 				</header>
-				
+
+				<div id="gameautomation"></div>
 				<div class="box container" id="ideas">
+					<div id="gameautomation"></div>
 					<section>
 						<header>
 							<h3><a href="https://github.com/felixitous/automation">Game Automation</a></h3>
@@ -139,6 +148,7 @@ def switch_cheese(driver):
 
 				</div>
 
+				<div id="shortestsuperstring"></div>
 				<div class="box container">
 					<section>
 						<header>
