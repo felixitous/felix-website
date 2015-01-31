@@ -28,7 +28,7 @@
 .title-animation:hover {
   -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
   animation-play-state: paused;
-  color:#01A9DB;
+  color:#3E9FD0;
 }
 
 @keyframes slightpulse{
@@ -112,7 +112,7 @@
 }
 
 .setting {
-  background-color: #01A9DB;
+  background-color: #3E9FD0;
 }
 
 .thanks h1 {
@@ -149,7 +149,7 @@
     -o-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    color: #01A9DB;
+    color: #3E9FD0;
 }
 
 .home_page:hover {
@@ -169,7 +169,7 @@
 }
 
 .felixliu:hover {
-    color:#01A9DB;
+    color:#3E9FD0;
 }
 
 .intro_bar {
